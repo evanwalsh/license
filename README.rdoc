@@ -1,0 +1,7 @@
+= license
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 evanwalsh. See LICENSE for details.
