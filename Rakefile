@@ -9,7 +9,6 @@ begin
     gem.email = "evan@nothingconcept.com"
     gem.homepage = "http://github.com/evanwalsh/license"
     gem.authors = ["evanwalsh"]
-
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError

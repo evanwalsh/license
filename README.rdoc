@@ -4,4 +4,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2009 evanwalsh. See LICENSE for details.
+Copyright (c) 2009 Evan Walsh. See LICENSE for details.
