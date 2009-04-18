@@ -1,6 +1,34 @@
-= license
+= License
 
-Description goes here.
+License is a gem that can generate and validate license keys.  This can powered paid/shareware apps written in Ruby.
+
+== Installation
+
+To install, use these commands:
+
+  gem sources -a http://gems.github.com  # you only need to run this once
+  sudo gem install evanwalsh-license
+  
+To use this in your Rails app, add this to your config/environment.rb:
+
+  Rails::Initializer.run do |config|
+      config.gem 'evanwalsh-license', :lib => 'license', :source => 'http://gems.github.com'
+  end
+  
+== Usage
+
+For a new license, call the License.new method with the name, email, and product name as the arguments
+
+  @license = License.new("Evan Walsh","evan@nothingconcept.com","License Gem Test")
+  
+Then, you can generate a key using the generate method
+
+  @license.generate # returns 3F7B-D428-ED3A-3636
+  
+To check if a key is valid, use the validate method with they key as the argument
+
+  @license.validate("3F7B-D428-ED3A-3636") # returns true
+
 
 == Copyright
 
