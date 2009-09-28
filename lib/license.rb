@@ -1,7 +1,6 @@
 #!/usr/bin/ruby
 
 class License
-  require "rubygems"
   require "digest/sha1"
   EXTRA = "evnwlsh"
   attr_reader :name,:email,:product
