@@ -5,14 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "license"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{A honor-based license key generator}
     gem.email = "evan@nothingconcept.com"
     gem.homepage = "http://github.com/evanwalsh/license"
     gem.authors = ["evanwalsh"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
-  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
 
 require 'rake/testtask'

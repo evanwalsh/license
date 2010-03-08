@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{license}
-  s.version = "0.6.0"
+  s.version = "0.6.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["evanwalsh"]
-  s.date = %q{2009-09-27}
+  s.date = %q{2010-03-07}
   s.email = %q{evan@nothingconcept.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -30,8 +30,8 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/evanwalsh/license}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
-  s.summary = %q{TODO}
+  s.rubygems_version = %q{1.3.6}
+  s.summary = %q{A honor-based license key generator}
   s.test_files = [
     "test/license_test.rb",
      "test/test_helper.rb"

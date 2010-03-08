@@ -32,6 +32,7 @@ class LicenseTest < Test::Unit::TestCase
     
     should "return nil when an invalid key is validated" do
       assert_equal nil, @license.validate(@license.generate.reverse)
+      assert_equal nil, @license.validate("EVAN WALSH IS AWESOME")
     end
     
   end

@@ -6,14 +6,20 @@ License is a gem that can generate and validate license keys.  This can powered 
 
 To install, use these commands:
 
-  gem sources -a http://gems.github.com  # you only need to run this once
-  sudo gem install evanwalsh-license
+  gem sources -a http://rubygems.org  # you only need to run this if you're not using the latest RubyGems
+  sudo gem install license
   
+=== Using with Rails 2.X
+
 To use this in your Rails app, add this to your config/environment.rb:
 
   Rails::Initializer.run do |config|
-      config.gem 'evanwalsh-license', :lib => 'license', :source => 'http://gems.github.com'
+      config.gem 'license'
   end
+  
+=== Using with Rails 3.X
+
+I won't code or test with Rails 3 until it has been officially released.
   
 == Usage
 
@@ -29,7 +35,10 @@ To check if a key is valid, use the validate method with they key as the argumen
 
   @license.validate("3F7B-D428-ED3A-3636") # returns true
 
+== Notes
+
+Please note that this is not a bulletproof copy-protection solution. It's based on more of an honor system.
 
 == Copyright
 
-Copyright (c) 2009 Evan Walsh. See LICENSE for details.
+Copyright (c) 2009-2010 Evan Walsh. See LICENSE for details.
